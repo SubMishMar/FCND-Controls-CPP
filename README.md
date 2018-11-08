@@ -324,3 +324,5 @@ Thanks to Fotokite for the initial development of the project code and simulator
  - Implemented motor command generator
     - Here are the lines of code: https://github.com/SubMishMar/FCND-Controls-CPP/blob/882335c808d3393d61b331db3fe5de4554e8c491/src/QuadControl.cpp#L73-L87
     
+ -  A video of all scenarios can be found here: https://youtu.be/nHVj7Kxf_RA
+ -  I haven't yet tried the optional scenarios.
