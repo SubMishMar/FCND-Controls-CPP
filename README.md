@@ -318,7 +318,7 @@ Thanks to Fotokite for the initial development of the project code and simulator
    - took into account the max possible speed and acceleration along XY direction.
    
  - Implemented yaw controller
-    - Here are the lines of code: https://github.com/SubMishMar/FCND-Controls-CPP/blob/882335c808d3393d61b331db3fe5de4554e8c491/src/QuadControl.cpp#L268-L282
+    - Here are the lines of code: https://github.com/SubMishMar/FCND-Controls-CPP/blob/4f9e26ab2fd977b4063a1685d0a6cc441dbe3b1f/src/QuadControl.cpp#L268-L278
     - Took care to warp the angles and contain it between 0 and 2 times F_Pi by using fmodf()
  
  - Implemented motor command generator
