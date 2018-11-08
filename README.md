@@ -297,3 +297,30 @@ The specific performance metrics are as follows:
 ## Authors ##
 
 Thanks to Fotokite for the initial development of the project code and simulator.
+
+## Student Write Up ##
+
+- Implemented body rate controller in C++
+  -  Here are the lines of code where this is implemented: https://github.com/SubMishMar/FCND-Controls-CPP/blob/882335c808d3393d61b331db3fe5de4554e8c491/src/QuadControl.cpp#L110-L114
+  - Used the moment of inertia along x, y, z axes to generate the commanded torque along the aforementioned axes.
+
+- Implemented roll pitch controller in C++
+  - Here are the lines of code where I have implemented the roll pitch controller https://github.com/SubMishMar/FCND-Controls-CPP/blob/882335c808d3393d61b331db3fe5de4554e8c491/src/QuadControl.cpp#L143-L155
+  - I have taken care to contrain the tilt angles.
+ 
+ - Implemented Altitude Controller in C++
+   - Here are the lines of code: https://github.com/SubMishMar/FCND-Controls-CPP/blob/882335c808d3393d61b331db3fe5de4554e8c491/src/QuadControl.cpp#L185-L197
+   - constrained the accleration by taking into account the max ascent and descent rates.
+   - added an integral term to take into account the nonlinearities and uncertainities in scenario 4
+ 
+ - Implemented lateral position controller in C++
+   - Here are the lines of code: https://github.com/SubMishMar/FCND-Controls-CPP/blob/882335c808d3393d61b331db3fe5de4554e8c491/src/QuadControl.cpp#L234-L247
+   - took into account the max possible speed and acceleration along XY direction.
+   
+ - Implemented yaw controller
+    - Here are the lines of code: https://github.com/SubMishMar/FCND-Controls-CPP/blob/882335c808d3393d61b331db3fe5de4554e8c491/src/QuadControl.cpp#L268-L282
+    - Took care to warp the angles and contain it between 0 and 2 times F_Pi by using fmodf()
+ 
+ - Implemented motor command generator
+    - Here are the lines of code: https://github.com/SubMishMar/FCND-Controls-CPP/blob/882335c808d3393d61b331db3fe5de4554e8c491/src/QuadControl.cpp#L73-L87
+    
